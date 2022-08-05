@@ -4,9 +4,11 @@
 }
 
 body{
-    /*color: rgb(34, 31, 31);
-    */
     background-color: rgb(211, 206, 206);
+}
+#body{
+    background-color: rgb(211, 206, 206);
+    
 }
 
 #grilla{
@@ -140,16 +142,12 @@ h2{
         grid-area: main;
     }
     #grilla_home{
-        grid-template-rows: 5% 15% 15% 15% 5% 15% 15% 15%;
+        grid-template-rows: 5% 35% 5% 35%;
         grid-template-columns: 90%;
         grid-template-areas: "titulo1"
                              "img1"
-                             "img2"
-                             "img3"
                              "titulo2"
-                             "img4"
-                             "img5"
-                             "img6";
+                             "img2";
         justify-content: space-around;
         align-content: center;
         justify-items: center;
@@ -158,30 +156,14 @@ h2{
     #titulo1{
         grid-area: titulo1;
     }
-    #img1{
+    #carrusel1{
         grid-area: img1;
-    }
-    #img2{
-        grid-area: img2;
-    }
-    #img3{
-        grid-area: img3;
     }
     #titulo2{
         grid-area: titulo2;
     }
-    #img4{
-        grid-area: img4;
-    }
-    #img5{
-        grid-area: img5;
-    }
-    #img6{
-        grid-area: img6;
-    }
-    .imagenes{
-        height: 400px;
-        width: 400px;
+    #carrusel2{
+        grid-area: img2;
     }
     /*MAIN CONTACTO*/
     .main_contacto{
@@ -381,7 +363,7 @@ h2{
 
 @media only screen and (min-width:600px){
     #grilla{
-        grid-template-rows: 300px 1000px 500px;
+        grid-template-rows: 300px 1600px 500px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                             "main"
@@ -472,46 +454,37 @@ h2{
     main{
         grid-area: main;
     }
-    #grilla_home{
-        grid-template-rows: 10% 35% 10% 35%;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-areas: "area1 area1 area1"
-                            "area2 area3 area4"
-                            "area5 area5 area5"
-                            "area6 area7 area8";
+    .carousel-inner{
         justify-content: center;
-        align-content: space-around;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    #grilla_home{
+        grid-template-rows: 5% 45% 5% 45%;
+        grid-template-columns: 50%;
+        grid-template-areas: "titulo1"
+                             "img1"
+                             "titulo2"
+                             "img2";
+        justify-content: center;
+        align-content: center;
         justify-items: center;
         align-items: center;
     }
     #titulo1{
-        grid-area: area1;
+        grid-area: titulo1;
     }
-    #img1{
-        grid-area: area2;
-    }
-    #img2{
-        grid-area: area3;
-    }
-    #img3{
-        grid-area: area4;
+    #carrusel1{
+        grid-area: img1;
     }
     #titulo2{
-        grid-area: area5;
+        grid-area: titulo2;
     }
-    #img4{
-        grid-area: area6;
+    #carrusel2{
+        grid-area: img2;
     }
-    #img5{
-        grid-area: area7;
-    }
-    #img6{
-        grid-area: area8;
-    }
-    .imagenes{
-        height: 250px;
-        width: 250px;
-    }
+    
     /*MAIN CONTACTO*/
     .main_contacto{
         grid-area: main_contacto;
@@ -682,6 +655,10 @@ h2{
     }
     .main_sobrenosotros{
         grid-area: main_sobrenosotros;
+    }
+    .imagenes{
+        height: 300px;
+        width: 250px;
     }
     /*MAIN RESERVA TU TURNO*/
     .main_reservatuturno{
