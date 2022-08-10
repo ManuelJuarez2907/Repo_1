@@ -370,7 +370,7 @@ h2{
                             "footer";
     }
     #grilla_contacto{
-        grid-template-rows: 200px 600px 500px;
+        grid-template-rows: 400px 700px 500px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                             "main_contacto"
